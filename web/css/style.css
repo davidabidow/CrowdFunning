@@ -30,3 +30,10 @@
 .activated {
   border-bottom: solid 3px #EE6E73 !important;
 }
+.progress {
+    height: 8px !important;
+}
+
+#map {
+    height: 400px;
+}
