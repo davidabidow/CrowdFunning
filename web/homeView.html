@@ -6,8 +6,8 @@
         </ul>
         <br />
     </div>
-    <div id="test1" class="col s12" ng-show="hmCtrl.active" ng-repeat="artist in hmCtrl.artists">
-        <div class="col s2">
+    <div id="test1" class="col s12" ng-show="hmCtrl.active">
+        <div class="col s2" ng-repeat="artist in hmCtrl.artists">
             <div class="card small">
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="img/artiste/{{artist.name}}.jpg">
