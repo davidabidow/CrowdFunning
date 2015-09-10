@@ -14,10 +14,14 @@
       artist= {
         url: "/artist/:name",
         templateUrl: 'artistView.html',
+        controller: 'artistController',
+        controllerAs: 'artCtrl'
       },
       city= {
         url: '/city/:name',
-        templateUrl: 'cityView.html'
+        templateUrl: 'cityView.html',
+        controller: 'cityController',
+        controllerAs: 'ctCtrl'
       };
       $stateProvider.state('home', home)
       .state('artist', artist)
