@@ -13,6 +13,9 @@
         $http.get('artiste.json').success(function(response) {
           vm.artists = response;
         });
+        $http.get('ville.json').success(function(response) {
+            vm.cities = response;
+        });
         function triggerActive(option)
         {
           vm.active = option;

@@ -23,23 +23,19 @@
             </div>
         </div>
     </div>
-    <div id="test2" class="col s12" ng-show="!hmCtrl.active">
-                    <div class="col s2">
+    <div id="test2" class="col s12" ng-hide="hmCtrl.active">
+         <div class="col s2" ng-repeat="city in hmCtrl.cities">
             <div class="card small">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="img/city/bordeaux.jpg">
+                    <img class="activator" src="img/city/{{city.name}}.jpg">
                 </div>
                 <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Bordeaux<i class="material-icons right">more_vert</i></span>
+                    <span class="card-title activator grey-text text-darken-4">{{city.name}}<i class="material-icons right">more_vert</i></span>
                     <p><a ui-sref="city">Voir plus</a></p>
                 </div>
                 <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Bordeaux<i class="material-icons right">close</i></span>
-                    <p>Bordeaux (prononcé [bɔʁ.ˈd̪o ]) est une commune du Sud-Ouest de la France, préfecture du département de la Gironde et chef-lieu de la région Aquitaine.
-
-Capitale de l'ancienne Guyenne — le nord de l'Aquitaine actuelle —, Bordeaux, située en bordure des Landes de Gascogne, fait partie de la Gascogne.
-
-En 2012, la commune était la neuvième commune de France par sa population. La population de Bordeaux intra-muros reste relativement faible comparée à son agglomération puisqu'en 2012, 27,9 % des habitants de l'agglomération vivaient dans Bordeaux contre 45,3 % en 1968. Cela s'explique par la faible superficie de la ville, et par l'attractivité des communes de banlieue comme Mérignac ou Pessac, qui comptent chacune environ 60 000 habitants. Bordeaux est la commune principale de la métropole « Bordeaux Métropole », qui rassemble 28 communes et 737 492 habitants1, la deuxième de France, par sa population2, derrière la « Métropole européenne de Lille » et devant « Toulouse Métropole ».</p>
+                    <span class="card-title grey-text text-darken-4">{{city.name}}<i class="material-icons right">close</i></span>
+                    <p>{{city.description}}</p>
                 </div>
             </div>
         </div>
