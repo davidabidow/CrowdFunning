@@ -27,6 +27,14 @@
       },
       city= {
         url: '/city/:name',
+        params: {
+            name: 'Bordeaux'
+        },
+        resolve: {
+            name: ['$stateParams', function ($stateParams) {
+                return $stateParams.name;
+            }]
+        },
         templateUrl: 'cityView.html',
         controller: 'cityController',
         controllerAs: 'ctCtrl'
