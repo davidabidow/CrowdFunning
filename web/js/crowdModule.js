@@ -13,6 +13,14 @@
       },
       artist= {
         url: "/artist/:name",
+        params: {
+            name: 'Norman'
+        },
+        resolve: {
+            name: ['$stateParams', function ($stateParams) {
+                return $stateParams.name;
+            }]
+        },
         templateUrl: 'artistView.html',
         controller: 'artistController',
         controllerAs: 'artCtrl'

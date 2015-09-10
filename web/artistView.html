@@ -1,1 +1,62 @@
-artist View
+<div class="container">
+    <a ui-sref="home" class="waves-effect waves-light btn">Revenir page artiste</a><br /><br />
+    <!-- Le header d'un artiste -->
+    <div class="row z-depth-2 info hoverable">
+        <div class="col s12 m6">
+            <h3>{{artCtrl.artist.name}}</h3>
+            <p>{{artCtrl.artist.description}}</p>
+        </div>
+        <div class="col s12 m6">
+            <div class="video-container no-controls">
+                <iframe width="560" height="315" src="{{artCtrl.artist.youtube}}" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div><br />
+    <!-- Objecif-->
+    <div class="row z-depth-2 info hoverable">
+        <h5>Objectif</h5><br />
+        <div class="progress">
+            <div class="determinate" style="width: 70%"></div>
+        </div>
+        <p class="center-align"><b>10500€</b> financés sur <b>15000€</b></p>
+    </div>
+    <!--Les infos des tournées -->
+    <div class="row z-depth-2 info hoverable">
+        <h5>Tournée prévue</h5>
+        <table class="hoverable">
+            <thead>
+                <tr>
+                    <th data-field="id">Ville</th>
+                    <th data-field="name">Date</th>
+                    <th data-field="price">Nombre de place</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Paris</td>
+                    <td>16 Septembre</td>
+                    <td>1400</td>
+                </tr>
+                <tr>
+                    <td>Bordeaux</td>
+                    <td>18 Septembre</td>
+                    <td>950</td>
+                </tr>
+                <tr>
+                    <td>Lyon</td>
+                    <td>20 Septembre</td>
+                    <td>1200</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Financer un artiste-->
+    <div class="row z-depth-2 info hoverable">
+        <ul class="collection with-header">
+            <li class="collection-header"><h5>Aider Norman</h5></li>
+            <li class="collection-item"><div>1€ - Don<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+            <li class="collection-item"><div>15€ - Place du spectable<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+            <li class="collection-item"><div>50€ - Place + accès backstage<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+        </ul>
+    </div>
+</div>
