@@ -16,5 +16,9 @@
               vm.city = response;
           })
         });
+
+        $http.get('artiste.json').success(function(response) {
+          vm.artists = response;
+        });
     }
 }());
