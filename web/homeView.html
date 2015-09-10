@@ -6,25 +6,19 @@
         </ul>
         <br />
     </div>
-    <div id="test1" class="col s12" ng-show="hmCtrl.active">
+    <div id="test1" class="col s12" ng-show="hmCtrl.active" ng-repeat="artist in hmCtrl.artists">
         <div class="col s2">
             <div class="card small">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="img/artiste/artiste.jpg">
+                    <img class="activator" src="img/artiste/{{artist.name}}.jpg">
                 </div>
                 <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Norman<i class="material-icons right">more_vert</i></span>
+                    <span class="card-title activator grey-text text-darken-4">{{artist.name}}<i class="material-icons right">more_vert</i></span>
                     <p><a ui-sref="artist">Voir plus</a></p>
                 </div>
                 <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Norman<i class="material-icons right">close</i></span>
-                    <p>Norman Thavaud est un humoriste et acteur français, né le 14 avril 1987 à Arras dans le département du Pas-de-Calais.
-
-Norman s'est fait connaître en publiant ses vidéos sur internet et en les relayant sur des réseaux sociaux. Il est dans la lignée d'une nouvelle génération d'humoristes tels que Cyprien, Mister V, Hugo Tout Seul ou La Ferme Jérôme (Jérôme Niel) ayant acquis leur notoriété via des sites de partage vidéo et réseaux sociaux.
-
-Récemment, il a commencé une carrière à la télévision en interprétant des rôles secondaires dans certains épisodes du Palmashow diffusés sur D8 aux côtés de Grégoire Ludig et David Marsais. Il fut aussi figurant (ou guest star) d'un épisode de Bref consacré aux hot-lines.
-
-Le 12 janvier 2012, Norman a réuni près de 3 000 personnes au Grand Rex à Paris, lors de son spectacle, le Zapping Amazing.</p>
+                    <span class="card-title grey-text text-darken-4">{{artist.name}}<i class="material-icons right">close</i></span>
+                    <p>{{artist.description}}</p>
                 </div>
             </div>
         </div>
