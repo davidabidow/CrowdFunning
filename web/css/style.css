@@ -26,3 +26,11 @@
 .info {
     padding: 20px;
 }
+
+.progress {
+    height: 8px !important;
+}
+
+#map {
+    height: 400px;
+}
