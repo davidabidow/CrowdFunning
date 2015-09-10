@@ -13,3 +13,12 @@
 .card .card-content .material-icons{
     padding-top: 10px;
 }
+
+#footer {
+    margin-top: 50px;
+    padding: 10px 0;
+}
+
+#footer a {
+    color: white;
+}
