@@ -10,7 +10,7 @@
         <div class="col s2" ng-repeat="artist in hmCtrl.artists">
             <div class="card small">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="img/artiste/{{artist.name}}.jpg">
+                    <img class="activator" src="{{artist.url}}">
                 </div>
                 <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4">{{artist.name}}<i class="material-icons right">more_vert</i></span>
@@ -27,7 +27,7 @@
          <div class="col s2" ng-repeat="city in hmCtrl.cities">
             <div class="card small">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="img/city/{{city.name}}.jpg">
+                    <img class="activator" src="{{city.url}}">
                 </div>
                 <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4">{{city.name}}<i class="material-icons right">more_vert</i></span>
