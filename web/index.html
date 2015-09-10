@@ -7,72 +7,26 @@
         <link rel="stylesheet" type="text/css" href="css/materialize.min.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    </head>
-    <body>
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo">Crowdfunning</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="">Inscription</a></li>
-                    <li><a href="">Connexion</a></li>
-                    <li><a href="">Aide</a></li>
-                </ul>
-            </div>
-        </nav><br /><br />
-        <div class="row">
-            <div class="col s12">
-                <ul class="tabs">
-                    <li class="tab col s6"><a class="active"href="#test1">Par artiste</a></li>
-                    <li class="tab col s6"><a  href="#test2">Par ville</a></li>
-                </ul>
-                <br />
-            </div>
-            <div id="test1" class="col s12">
-                <div class="col s2">
-                    <div class="card small">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/artiste/artiste.jpg">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Norman<i class="material-icons right">more_vert</i></span>
-                            <p><a href="#">Voir plus</a></p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Norman<i class="material-icons right">close</i></span>
-                            <p>Norman Thavaud est un humoriste et acteur français, né le 14 avril 1987 à Arras dans le département du Pas-de-Calais.
-
-Norman s'est fait connaître en publiant ses vidéos sur internet et en les relayant sur des réseaux sociaux. Il est dans la lignée d'une nouvelle génération d'humoristes tels que Cyprien, Mister V, Hugo Tout Seul ou La Ferme Jérôme (Jérôme Niel) ayant acquis leur notoriété via des sites de partage vidéo et réseaux sociaux.
-
-Récemment, il a commencé une carrière à la télévision en interprétant des rôles secondaires dans certains épisodes du Palmashow diffusés sur D8 aux côtés de Grégoire Ludig et David Marsais. Il fut aussi figurant (ou guest star) d'un épisode de Bref consacré aux hot-lines.
-
-Le 12 janvier 2012, Norman a réuni près de 3 000 personnes au Grand Rex à Paris, lors de son spectacle, le Zapping Amazing.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="test2" class="col s12">
-                            <div class="col s2">
-                    <div class="card small">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/city/bordeaux.jpg">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Bordeaux<i class="material-icons right">more_vert</i></span>
-                            <p><a href="#">Voir plus</a></p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Bordeaux<i class="material-icons right">close</i></span>
-                            <p>Bordeaux (prononcé [bɔʁ.ˈd̪o ]) est une commune du Sud-Ouest de la France, préfecture du département de la Gironde et chef-lieu de la région Aquitaine.
-
-Capitale de l'ancienne Guyenne — le nord de l'Aquitaine actuelle —, Bordeaux, située en bordure des Landes de Gascogne, fait partie de la Gascogne.
-
-En 2012, la commune était la neuvième commune de France par sa population. La population de Bordeaux intra-muros reste relativement faible comparée à son agglomération puisqu'en 2012, 27,9 % des habitants de l'agglomération vivaient dans Bordeaux contre 45,3 % en 1968. Cela s'explique par la faible superficie de la ville, et par l'attractivité des communes de banlieue comme Mérignac ou Pessac, qui comptent chacune environ 60 000 habitants. Bordeaux est la commune principale de la métropole « Bordeaux Métropole », qui rassemble 28 communes et 737 492 habitants1, la deuxième de France, par sa population2, derrière la « Métropole européenne de Lille » et devant « Toulouse Métropole ».</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+        <script type="text/javascript" src="js/angular-ui-router.min.js"></script>
+        <script type="text/javascript" src="js/crowdModule.js"></script>
+        <script type="text/javascript" src="js/homeController.js"></script>
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
+    </head>
+    <body ng-app='crowdModule'>
+      <nav>
+          <div class="nav-wrapper">
+              <a href="#" class="brand-logo">Crowdfunning</a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li><a href="#">Inscription</a></li>
+                  <li><a href="#">Connexion</a></li>
+                  <li><a href="#">Aide</a></li>
+              </ul>
+          </div>
+      </nav><br /><br />
+      <div ui-view="">
+
+      </div>
     </body>
 </html>
