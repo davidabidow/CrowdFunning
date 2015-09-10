@@ -5,5 +5,26 @@
         "lat": 44.844927,
         "lng": -0.572837,
         "url": "img/city/bordeaux.jpg"
+    },
+    {
+        "name": "Paris",
+        "description": "Paris est la capitale de la France. Elle se situe au cœur d'une vaste plaine fertile au climat tempéré, le Bassin parisien, sur une boucle de la Seine, entre les confluents de celle-ci avec la Marne et l'Oise."
+        "lat": 48.8534100,
+        "lng": 2.3488000,
+        "url": "img/city/paris.jpg"
+    },
+    {
+        "name": "Bayonne",
+        "description": "Bayonne est une commune du sud-ouest de la France et l’une des deux sous-préfectures du département des Pyrénées-Atlantiques, en région Aquitaine."
+        "lat": 43.4833300,
+        "lng": -1.4833300,
+        "url": "img/city/bayonne.jpg"
+    },
+    {
+        "name": "Marseille",
+        "description": "Marseille est une commune du Sud-Est de la France, chef-lieu du département des Bouches-du-Rhône et de la région Provence-Alpes-Côte d'Azur."
+        "lat": 43.2969500,
+        "lng": 5.3810700,
+        "url": "img/city/marseille.jpg"
     }
 ]
