@@ -26,3 +26,7 @@
 .info {
     padding: 20px;
 }
+
+.activated {
+  border-bottom: solid 3px #EE6E73 !important;
+}
