@@ -1,28 +1,28 @@
 [
     {
         "name": "Bordeaux",
-        "description": "Bordeaux (prononcé [bɔʁ.ˈd̪o ]) est une commune du Sud-Ouest de la France, préfecture du département de la Gironde et chef-lieu de la région Aquitaine. Capitale de l'ancienne Guyenne — le nord de l'Aquitaine actuelle —, Bordeaux, située en bordure des Landes de Gascogne, fait partie de la Gascogne. En 2012, la commune était la neuvième commune de France par sa population. La population de Bordeaux intra-muros reste relativement faible comparée à son agglomération puisqu'en 2012, 27,9 % des habitants de l'agglomération vivaient dans Bordeaux contre 45,3 % en 1968. Cela s'explique par la faible superficie de la ville, et par l'attractivité des communes de banlieue comme Mérignac ou Pessac, qui comptent chacune environ 60 000 habitants. Bordeaux est la commune principale de la métropole « Bordeaux Métropole », qui rassemble 28 communes et 737 492 habitants1, la deuxième de France, par sa population2, derrière la « Métropole européenne de Lille » et devant « Toulouse Métropole »."
+        "description": "Bordeaux (prononcé [bɔʁ.ˈd̪o ]) est une commune du Sud-Ouest de la France, préfecture du département de la Gironde et chef-lieu de la région Aquitaine. Capitale de l'ancienne Guyenne — le nord de l'Aquitaine actuelle —, Bordeaux, située en bordure des Landes de Gascogne, fait partie de la Gascogne. En 2012, la commune était la neuvième commune de France par sa population. La population de Bordeaux intra-muros reste relativement faible comparée à son agglomération puisqu'en 2012, 27,9 % des habitants de l'agglomération vivaient dans Bordeaux contre 45,3 % en 1968. Cela s'explique par la faible superficie de la ville, et par l'attractivité des communes de banlieue comme Mérignac ou Pessac, qui comptent chacune environ 60 000 habitants. Bordeaux est la commune principale de la métropole « Bordeaux Métropole », qui rassemble 28 communes et 737 492 habitants1, la deuxième de France, par sa population2, derrière la « Métropole européenne de Lille » et devant « Toulouse Métropole ».",
         "lat": 44.844927,
         "lng": -0.572837,
         "url": "img/city/bordeaux.jpg"
     },
     {
         "name": "Paris",
-        "description": "Paris est la capitale de la France. Elle se situe au cœur d'une vaste plaine fertile au climat tempéré, le Bassin parisien, sur une boucle de la Seine, entre les confluents de celle-ci avec la Marne et l'Oise."
+        "description": "Paris est la capitale de la France. Elle se situe au cœur d'une vaste plaine fertile au climat tempéré, le Bassin parisien, sur une boucle de la Seine, entre les confluents de celle-ci avec la Marne et l'Oise.",
         "lat": 48.8534100,
         "lng": 2.3488000,
         "url": "img/city/paris.jpg"
     },
     {
         "name": "Bayonne",
-        "description": "Bayonne est une commune du sud-ouest de la France et l’une des deux sous-préfectures du département des Pyrénées-Atlantiques, en région Aquitaine."
+        "description": "Bayonne est une commune du sud-ouest de la France et l’une des deux sous-préfectures du département des Pyrénées-Atlantiques, en région Aquitaine.",
         "lat": 43.4833300,
         "lng": -1.4833300,
         "url": "img/city/bayonne.jpg"
     },
     {
         "name": "Marseille",
-        "description": "Marseille est une commune du Sud-Est de la France, chef-lieu du département des Bouches-du-Rhône et de la région Provence-Alpes-Côte d'Azur."
+        "description": "Marseille est une commune du Sud-Est de la France, chef-lieu du département des Bouches-du-Rhône et de la région Provence-Alpes-Côte d'Azur.",
         "lat": 43.2969500,
         "lng": 5.3810700,
         "url": "img/city/marseille.jpg"
