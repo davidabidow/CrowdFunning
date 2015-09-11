@@ -7,7 +7,7 @@
             <p>{{ctCtrl.city.description}}</p>
         </div>
         <div class="col s12 m6">
-            <div id="map"></div>
+          <map center="{{ctCtrl.city.lat}}, {{ctCtrl.city.lng}}" zoom="10"></map>
         </div>
     </div><br />
     <!-- Objecif-->
@@ -21,7 +21,7 @@
                     </div>
                     <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">{{artist.name}}<i class="material-icons right">more_vert</i></span>
-                        <p><a ui-sref="artist">Voir plus</a></p>
+                        <p><a href="#/artist/{{artist.name}}">Voir plus</a></p>
                     </div>
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">{{artist.name}}<i class="material-icons right">close</i></span>

@@ -1,12 +1,12 @@
 (function () {
     'use strict';
 
-    var crowdModule = angular.module('crowdModule', ['ui.router']);
+    var crowdModule = angular.module('crowdModule', ['ui.router', 'ngMap']);
 
     crowdModule.config(['$stateProvider', function ($stateProvider)
     {
       var home= {
-        url: "",
+        url: "/",
         templateUrl: 'homeView.html',
         controller: 'homeController',
         controllerAs: 'hmCtrl'
