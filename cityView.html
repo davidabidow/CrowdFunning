@@ -12,6 +12,35 @@
     </div><br />
     <!-- Objecif-->
     <div class="row z-depth-2 info hoverable">
+        <h5>Les lieux de rencontre</h5>
+        <table class="hoverable">
+            <thead>
+                <tr>
+                    <th data-field="id">Nom</th>
+                    <th data-field="name">Adresse</th>
+                    <th data-field="price">Nombre de places</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Café de la Gare</td>
+                    <td>41 rue du Temple</td>
+                    <td>600</td>
+                </tr>
+                <tr>
+                    <td>Théâtre de la Madeleine</td>
+                    <td> 19, rue de Surène </td>
+                    <td>525</td>
+                </tr>
+                <tr>
+                    <td>Le Splendid</td>
+                    <td>48 Rue du Faubourg Saint-Martin</td>
+                    <td>1100</td>
+                </tr>
+            </tbody>
+        </table>
+    </div><br />
+    <div class="row z-depth-2 info hoverable">
         <h5>Artistes de la semaine</h5><br />
         <div class="col s12">
             <div class="col s3" ng-repeat="artist in ctCtrl.artists | limitTo: 4">

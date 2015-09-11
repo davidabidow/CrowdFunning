@@ -1,12 +1,30 @@
 <div class="row">
     <div class="col s12">
         <ul class="tabs">
-            <li class="tab col s6"><a  ng-class="{'activated' : hmCtrl.active}" ui-sref="home" ng-click="hmCtrl.triggerActive(true)">Par artiste</a></li>
-            <li class="tab col s6"><a  ng-class="{'activated' : !hmCtrl.active}" ui-sref="home" ng-click="hmCtrl.triggerActive(false)">Par ville</a></li>
+            <li class="tab col s4"><a ng-class="{'activated' : hmCtrl.active == 0}" ui-sref="home" ng-click="hmCtrl.triggerActive(0)">Artiste du Jour</a></li>
+            <li class="tab col s4"><a  ng-class="{'activated' : hmCtrl.active == 1}" ui-sref="home" ng-click="hmCtrl.triggerActive(1)">Par artiste</a></li>
+            <li class="tab col s4"><a  ng-class="{'activated' : hmCtrl.active == 2}" ui-sref="home" ng-click="hmCtrl.triggerActive(2)">Par ville</a></li>
         </ul>
         <br />
     </div>
-    <div id="test1" class="col s12" ng-show="hmCtrl.active">
+    <div id="test0" class="col s12" ng-show="hmCtrl.active == 0">
+        <div class="col s2">
+            <div class="card small">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="img/artiste/Gasteuil.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Maxime Gasteuil<i class="material-icons right">more_vert</i></span>
+                    <p><a href="#/artist/Maxime Gasteuil">Voir plus</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+                    <p>Originaire de Saint-Emilion, Maxime Gasteuil s’oriente tout naturellement vers des études de viticulture œnologie qu’il fait en alternance. En parallèle il travaille avec son  père charpentier. Une fois son BTS commerce international en poche, il monte à Paris pour s’inscrire au Cours Simon. Maxime joue alors quelques pièces mais son véritable objectif est de faire de l’humour.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="test1" class="col s12" ng-show="hmCtrl.active == 1">
         <div class="col s2" ng-repeat="artist in hmCtrl.artists">
             <div class="card small">
                 <div class="card-image waves-effect waves-block waves-light">
@@ -23,7 +41,7 @@
             </div>
         </div>
     </div>
-    <div id="test2" class="col s12" ng-hide="hmCtrl.active">
+    <div id="test2" class="col s12" ng-show="hmCtrl.active == 2">
          <div class="col s2" ng-repeat="city in hmCtrl.cities">
             <div class="card small">
                 <div class="card-image waves-effect waves-block waves-light">
