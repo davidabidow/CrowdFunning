@@ -1,11 +1,13 @@
 <div class="row">
     <div class="col s12">
         <ul class="tabs">
-            <li class="tab col s6"><a ng-class="{'activated' : hmCtrl.daily == true}" ui-sref="home" ng-click="hmCtrl.daily = !hmCtrl.daily">Artiste du Jour</a></li>
+            <li class="tab col s4"><a ng-class="{'activated' : hmCtrl.active == 0}" ui-sref="home" ng-click="hmCtrl.triggerActive(0)">Artiste du Jour</a></li>
+            <li class="tab col s4"><a  ng-class="{'activated' : hmCtrl.active == 1}" ui-sref="home" ng-click="hmCtrl.triggerActive(1)">Par artiste</a></li>
+            <li class="tab col s4"><a  ng-class="{'activated' : hmCtrl.active == 2}" ui-sref="home" ng-click="hmCtrl.triggerActive(2)">Par ville</a></li>
         </ul>
         <br />
     </div>
-    <div id="test1" class="col s12" ng-show="hmCtrl.daily">
+    <div id="test0" class="col s12" ng-show="hmCtrl.active == 0">
         <div class="col s2">
             <div class="card small">
                 <div class="card-image waves-effect waves-block waves-light">
@@ -22,16 +24,7 @@
             </div>
         </div>
     </div>
-</div>
-<div class="row">
-    <div class="col s12">
-        <ul class="tabs">
-            <li class="tab col s6"><a  ng-class="{'activated' : hmCtrl.active == 0}" ui-sref="home" ng-click="hmCtrl.triggerActive(0)">Par artiste</a></li>
-            <li class="tab col s6"><a  ng-class="{'activated' : hmCtrl.active == 1}" ui-sref="home" ng-click="hmCtrl.triggerActive(1)">Par ville</a></li>
-        </ul>
-        <br />
-    </div>
-    <div id="test1" class="col s12" ng-show="hmCtrl.active == 0">
+    <div id="test1" class="col s12" ng-show="hmCtrl.active == 1">
         <div class="col s2" ng-repeat="artist in hmCtrl.artists">
             <div class="card small">
                 <div class="card-image waves-effect waves-block waves-light">
@@ -48,7 +41,7 @@
             </div>
         </div>
     </div>
-    <div id="test2" class="col s12" ng-show="hmCtrl.active == 1">
+    <div id="test2" class="col s12" ng-show="hmCtrl.active == 2">
          <div class="col s2" ng-repeat="city in hmCtrl.cities">
             <div class="card small">
                 <div class="card-image waves-effect waves-block waves-light">
