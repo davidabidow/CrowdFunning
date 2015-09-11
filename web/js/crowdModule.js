@@ -13,9 +13,6 @@
       },
       artist= {
         url: "/artist/:name",
-        params: {
-            name: 'Norman'
-        },
         resolve: {
             name: ['$stateParams', function ($stateParams) {
                 return $stateParams.name;
@@ -27,9 +24,6 @@
       },
       city= {
         url: '/city/:name',
-        params: {
-            name: 'Bordeaux'
-        },
         resolve: {
             name: ['$stateParams', function ($stateParams) {
                 return $stateParams.name;
